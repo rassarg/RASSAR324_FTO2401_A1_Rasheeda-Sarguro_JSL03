@@ -1,10 +1,16 @@
 # [JSL03] Project Submission: Which one is which? Declarative or Imperative?!
 
-Loom Recording Link: [Insert Link]
+Loom Recording Link: 
+
+Example 1 - Imperative:
+https://www.loom.com/share/3f75972e7812433e921990a08c042bf0?sid=3bce0ec8-c8ba-444c-9f54-056fa80de3bf
+
+Example 2 - Declarative:
+https://www.loom.com/share/200cbc4240ee4337876a4863286ecb18?sid=b21875b0-c539-453f-92ca-74522c7af739
 
 # Project Overview
 
-In this project, you will be presented with two JavaScript code examples, each demonstrating a different programming paradigm: imperative and declarative. Your task is to analyse these examples and determine which one follows an imperative programming style and which one follows a declarative programming style. 
+In this project, you will be presented with two JavaScript code examples, each demonstrating a different programming paradigm: imperative and declarative. Your task is to analyze these examples and determine which one follows an imperative programming style and which one follows a declarative programming style. 
 
 You will present your reasoning for each example, record your presentation using Loom, and submit your findings along with the Loom recording to the Project Tab on the Learning Management System (LMS).
 
@@ -59,30 +65,43 @@ Follow the steps outlined above to complete the project successfully.
 
 # Presentation Talking Points
 
-Example #: [Insert Example Number]
+Example #: 1
 
-## Imperative Approach [2 Minutes]
-1. **Step-by-Step Explanation:** Start by explaining the code logic in the imperative approach.
-   - Mention each step of the process in the code.
-   - Describe how the code provides explicit instructions for each action.
-   - Discuss the use of variables to track the state and progress of the process.
+## Imperative Programming Paradigm Approach [2 Minutes]
+1. **Step-by-Step Explanation:** Start by explaining the code logic in the imperative approach:
+ - "give an authoritative command". Focuses on the HOW in coding, providing exact steps needed for a code solution. 
+ - Explicitly defined grill Temp, followed by seasoning (that is defined but not used.)
+ 
+   
+Mention each step of the process in the code.   
+Describe how the code provides explicit instructions for each action.
+- Explicitly given a grill and steak Temp. In order to execute the code, the steak temp needs to change.
+Discuss the use of variables to track the state and progress of the process.
+
 
 2. **Emphasis on How:** Highlight how the imperative approach focuses on detailing "how" the task is accomplished.
-   - Point out the use of loops, conditions, and explicit instructions.
-   - Discuss any mutable variables or states that change during execution.
+Point out the use of loops, conditions, and explicit instructions.
+- We never exit the while loop. Because we have specified the variable steakTemperature = 0, the condition of the while loop says while (steakTemperature < desiredDoneness), keep running. That will always be the case and we never move onto the If statement
+
+Discuss any mutable variables or states that change during execution.
+- mutable variable let grillTemperature = 204 is changed. The state remains unchanged because the mutable variable steakTemperature remains unchanged
 
 
-Example #: [Insert Example Number]
+Example #: 2
 
-## Declarative Approach [2 Minutes]
+## Declarative Programming Paradigm Approach [2 Minutes]
 1. **High-Level Process Description:** Explain the code logic in the declarative approach.
-   - Describe the cooking process in a high-level, abstract manner.
+   - focuses on WHAT the program should accomplish.
+   - Describe the cooking process in a high-level, abstract manner, using data-driven approach.
    - Emphasize that the code defines "what" should happen rather than "how" it should happen.
 
 2. **Use of Data Structures:** Discuss the use of data structures (e.g., arrays, objects) to represent the process steps.
-   - Explain how the process steps are organized in a structured format.
-   - Mention any abstraction layers or functions used to encapsulate actions.
+Explain how the process steps are organized in a structured format.
+   - Array of objects that contain steps in a high-level manner (provides an overview of general steps without specific details to be carried out). This separates the actions from the implementation details, so we focus on what to do rather than how.
+   - it says to preheat the grill to a certain temperature, but it doesn't detail the exact process of preheating.
+   - Here if we chose to eliminate some of the 'cases' the code can still run.
+Mention any abstraction layers or functions used to encapsulate actions.
 
 # Learning Outcome [1 Minute]
-- Reflect on what you've learned from analyzing these code examples in different paradigms.
-
+Reflect on what you've learned from analyzing these code examples in different paradigms.
+ - It was confusing because both examples had similarities. I was looking for explicit differences such as 'map, reduce, and filter', and example 1 is more readable (which is usually the case in Declarative programming)
